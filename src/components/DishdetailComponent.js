@@ -25,8 +25,8 @@ class DishDetail extends Component {
                 <ul className="list-unstyled">
                     {comments.map(comment=>(
                             <div key={comment.id}>
-                                <li className="mt-1">{comment.comment}</li>
-                                <li className="mt-1">-- {comment.author} , {new Date(comment.date).toUTCString()}</li>
+                                <li className="mt-2">{comment.comment}</li>
+                                <li className="mt-2">-- {comment.author} , {new Date(comment.date).toUTCString()}</li>
                             </div>
                     ))
                     }
