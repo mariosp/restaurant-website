@@ -12,7 +12,7 @@ const RenderCard = ({item, isLoading, errMess})=>{
         return (
             <h4>{errMess}</h4>
         )
-    }else {
+    } else {
         return (
             <Card>
                 <CardImg src={baseUrl + item.image} alt={item.name}/>
