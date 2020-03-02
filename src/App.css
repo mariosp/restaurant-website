@@ -31,3 +31,28 @@ address{
 .navbar-dark {
     background-color: #512DA8;
 }
+
+
+/*animation classes*/
+
+.page-enter {
+    opacity: 0.01;
+    tranform: translateX(-100%);
+}
+
+.page-enter-active {
+    opacity: 1;
+    tranform: translateX(0%);
+    transition: all 300ms ease-in;
+}
+
+.page-exit {
+    opacity: 1;
+    tranform: translateX(0%);
+}
+
+.page-exit-exit {
+    opacity: 0.01;
+    tranform: translateX(100%);
+    transition: all 300ms ease-out;
+}
