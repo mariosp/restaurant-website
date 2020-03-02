@@ -33,6 +33,7 @@ class CommentForm extends Component{
 
     handleSubmit(values){
         console.log(values);
+        this.toggleModal();
 
     }
 
