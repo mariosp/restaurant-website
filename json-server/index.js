@@ -8,7 +8,7 @@ const publicPath = path.join(__dirname, '..', 'build');
 const port = process.env.PORT || 3000;
 
 server.use(middlewares);
-server.use('/static',express.static(publicPath));
+server.use(express.static(publicPath));
 server.use(router);
 
 // Avoid CORS issue
