@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "yarn run json-server --watch db.json --static ../build",
+    "start": "yarn run json-server --watch db.json --host https://restaurant-website-app.herokuapp.com --port $PORT --static ../build",
     "dev" : "yarn run json-server --watch db.json -d 2000 -p 3001"
   },
   "dependencies": {
